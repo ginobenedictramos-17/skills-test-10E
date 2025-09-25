@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order here</title>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+        <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    </head>
+    <body>
+        <h1>Live Mas! Order here.</h1>
+      <div id="div1">  
+        <form>
+             
+            <input id="name" type="text" placeholder="type your name">
+            <br>
+            <input type="text" id="address" placeholder="type your address">
+            <br>
+            <input type="text" id="number" placeholder="type your phone number">
+            <br>
+            <label>Beef and Potato Burrito (P169)</label>
+            <input type="checkbox" id="taco1" value="169">
+            <br>
+            <label>Crispy Shell Beef Taco (P99)</label>
+            <input type="checkbox" id="taco2" value="99">
+            <br>
+            <label>Flaming Quesowrap Supreme (P219)</label>
+            <input type="checkbox" id="taco3" value="219">
+            <br>
+            <button type="button" py-click="ordering_form">Order</button>
+        </form>
+      </div> 
+       <py-script src="main.py"></py-script> 
+        </body>
+    </html>

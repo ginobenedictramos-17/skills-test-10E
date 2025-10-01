@@ -6,12 +6,55 @@
         <title>Order here</title>
         <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
         <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<style>
+        body {
+          background-color: #A77BCA;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+        }
+        #div1 {
+          background-color: white;
+          color: #36399a;
+          font-size: 70px;
+          margin: 70px auto; 
+          padding: 70px;
+          width: 700px;
+          height: 700px;
+          font-family: sans-serif;
+        }
+        #div2 {
+          background-color: #FFBC0A;
+          color: #36399a;
+          margin: auto; 
+          padding: 20px;
+          width: 700px;
+          font-size: 30px;
+          font-family: sans-serif;
+        }
+        button {
+          background-color: #36399a;
+          color: #FFBC0A;
+          font-size: 73px;
+          width: 200px;
+          height: 120px;
+        }
+</style>
     </head>
     <body>
-        <h1>Live Mas! Order here.</h1>
-      <div id="div1">  
+       <div id="div1"> <img src="https://i0.wp.com/www.visitmtsthelens.com/wp-content/uploads/2017/09/Taco-Bell-893x1080.jpeg?ssl=1" width="330px" height="330px">
+        <br>
+        <p>Order Here!!</p>  
+
+      </div>
+
+      <br>
+      
+      <div id="div2">  
         <form>
-             
+            
             <input id="name" type="text" placeholder="type your name">
             <br>
             <input type="text" id="address" placeholder="type your address">
@@ -19,16 +62,29 @@
             <input type="text" id="number" placeholder="type your phone number">
             <br>
             <label>Beef and Potato Burrito (P169)</label>
+            <img src="https://tacobell.com.au/wp-content/uploads/2020/05/BeefyCheesy_WebTile_Png.png" width="500px">
             <input type="checkbox" id="taco1" value="169">
             <br>
             <label>Crispy Shell Beef Taco (P99)</label>
+            <img src="https://tacobell.com.my/wp-content/uploads/2020/09/Crunchy-Taco.jpg" width="500px">
             <input type="checkbox" id="taco2" value="99">
             <br>
             <label>Flaming Quesowrap Supreme (P219)</label>
+            <img src="https://media.pickaroo.com/media/thumb/product_photo/2024/10/21/dyNLxKxzTojr2mwqQ3Ho5y_watermark_400.jpg" width="500px">
             <input type="checkbox" id="taco3" value="219">
             <br>
+            <h1>Mode of Payment (all modes of payment are upon arrival):</h1>
+            <br>
+            <select id="payment">
+              <option>Cash Payment</option>
+              <option>Credit Card</option>
+              <option>Gcash, Paymaya etc.</option>
+            </select>
+            <br>
             <button type="button" py-click="ordering_form">Order</button>
-        </form>
+            <br>
+            <a href="http://127.0.0.1:5500/SW2/index.html" target="_blank">Back to Home</a>
+            </form>
       </div> 
        <py-script src="main.py"></py-script> 
         </body>
